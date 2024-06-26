@@ -8,11 +8,11 @@ btn.addEventListener("click", function () {
     let sconto = 0;
     let prezzo_biglietto = 0.21 * km;
 
-    if (value == "minorenne") {
+    if (age === "minorenne") {
         sconto = 0.2
     }
 
-    else if (value == "senior") {
+    else if (age === "senior") {
         sconto = 0.4
     }
 

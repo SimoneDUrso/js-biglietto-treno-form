@@ -39,15 +39,48 @@
                 <button id="calculate-price" class="btn btn-primary">Genera</button>
                 <button id="delete" class="btn btn-primary">Annulla</button>
             </div>
-
-
         </form>
 
+        <div class="row d-flex flex-row mt-5">
+            <h2 class="text-center mb-5">IL TUO BIGLIETTO</h2>
 
+            <div class=" col-4 flex-column">
+                <h3 class="fs-4">DETTAGLIO PASSEGGERI</h3>
+                <div class="content bg-danger">
+                    <h3>NOME PASSEGGERO</h3>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Offerta</th>
+                                    <th scope="col">Carrozza</th>
+                                    <th scope="col">Codice CP</th>
+                                    <th scope="col">Costo Biglietto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Biglietto standard</td>
+                                    <td id="carrozza"></td>
+                                    <td id="codice"></td>
+                                    <td id="prezzo_finale"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <script src="./js/script.js"> type = "text/javascript"</script>
+
+    <script src="./js/script.js" type="text/javascript"></script>
 </body>
 
 </html>

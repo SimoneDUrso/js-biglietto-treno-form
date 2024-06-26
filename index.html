@@ -11,10 +11,39 @@
 </head>
 
 <body>
+    <div class="container">
+        <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <form action="#">
+            <div class="row d-flex justify-content-center">
+                <div class="col-4 text-center">
+                    <label class="mb-3">Nome e Cognome</label>
+                    <input class="form-control" id="name-surname" type="text">
+                </div>
+
+                <div class="col-4 text-center">
+                    <label for="km" class="mb-3">Km da percorrere</label>
+                    <input class="form-control" id="km" type="text">
+                </div>
+
+                <div class="col-4 text-center">
+                    <label for="age" class="mb-3">Fascia d'età</label>
+                    <input class="form-control" id="age" type="text">
+                </div>
+            </div>
+
+            <div class="col-12 text-center mt-5">
+                <button id="calculate-price" class="btn btn-primary">Genera</button>
+                <button id="delete" class="btn btn-primary">Annulla</button>
+            </div>
 
 
+        </form>
 
-    <script src="./js/script.js" type="text/javascript"></script>
+
+    </div>
+
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

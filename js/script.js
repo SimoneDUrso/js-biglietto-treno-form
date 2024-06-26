@@ -18,6 +18,9 @@ btn.addEventListener("click", function () {
 
     let prezzo_finale = prezzo_biglietto - (prezzo_biglietto * sconto);
 
-    document.getElementById("prezzo_finale").innerHTML += prezzo_finale.toFixed(2) + " " + "&euro;"
-    console.log(prezzo_finale);
+    // STAMPA DEGLI ELEMENTI SU SCHERMO
+    document.getElementById("name_surname").innerHTML = name_surname;
+    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("codice").innerHTML = Math.floor(Math.random() * 100000) + 1;
+    document.getElementById("prezzo_finale").innerHTML = prezzo_finale.toFixed(2) + " " + "&euro;"
 })

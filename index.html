@@ -28,6 +28,7 @@
                 <div class="col-4 text-center">
                     <label for="age" class="mb-3">Fascia d'età</label>
                     <select class="form-select" aria-label="Default select example" id="age">
+                        <option value="">...</option>
                         <option value="minorenne">Minorenne(-18)</option>
                         <option value="maggiorenne">Maggiorenne(18+)</option>
                         <option value="senior">Senior(65+)</option>
@@ -37,22 +38,23 @@
 
             <div class="col-12 text-center mt-5">
                 <button id="calculate-price" class="btn btn-primary">Genera</button>
-                <button id="delete" class="btn btn-primary">Annulla</button>
+                <button type="reset" class="btn btn-primary">Annulla</button>
             </div>
         </form>
 
         <div class="row d-flex flex-row mt-5">
             <h2 class="text-center mb-5">IL TUO BIGLIETTO</h2>
 
-            <div class=" col-4 flex-column">
+            <div class=" col-4 flex-column h-100">
                 <h3 class="fs-4">DETTAGLIO PASSEGGERI</h3>
-                <div class="content bg-danger">
+                <div class="content bg-secondary h-75 p-3 fw-bold">
                     <h3>NOME PASSEGGERO</h3>
+                    <p id="name_surname" class="fs-3"></p>
                 </div>
             </div>
 
-            <div class="col-8">
-                <div class="card">
+            <div class="col-8 ">
+                <div class="card h-100">
                     <div class="card-body">
                         <table class="table">
                             <thead>

@@ -14,7 +14,7 @@
     <div class="container bg-purple p-5 mt-5">
         <h2 class="text-center fw-bold text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
         <form action="#">
-            <div class="row d-flex justify-content-center bg-light p-5">
+            <div class="row d-flex justify-content-center bg-light pt-5 px-3">
                 <div class="col-4 text-center">
                     <label class="mb-3 purple">Nome e Cognome</label>
                     <input class="form-control border-purple" id="name-surname" type="text">
@@ -34,27 +34,28 @@
                         <option value="senior">Senior(65+)</option>
                     </select>
                 </div>
+
+                <div class="col-12 text-center my-5 ">
+                    <button id="calculate-price" class="btn btn-info purple">Genera</button>
+                    <button type="reset" class="btn btn-info purple">Annulla</button>
+                </div>
             </div>
 
-            <div class="col-12 text-center my-5 ">
-                <button id="calculate-price" class="btn btn-info purple">Genera</button>
-                <button type="reset" class="btn btn-info purple">Annulla</button>
-            </div>
         </form>
 
         <h2 class="text-center fw-bold text-white mt-5">IL TUO BIGLIETTO</h2>
         <div class="row d-flex flex-row bg-light p-3">
 
-            <div class=" col-4 flex-column h-100">
-                <h3 class="fs-4">DETTAGLIO PASSEGGERI</h3>
-                <div class="content bg-secondary h-75 p-3 fw-bold">
+            <h3 class="fs-4">DETTAGLIO PASSEGGERI</h3>
+            <div class=" col-4 flex-column h-100 p-0">
+                <div class="content bg-secondary h-150 fw-bold">
                     <h3>NOME PASSEGGERO</h3>
                     <p id="name_surname" class="fs-3"></p>
                 </div>
             </div>
 
-            <div class="col-8 ">
-                <div class="card h-100">
+            <div class="col-8 p-0">
+                <div class="card h-150">
                     <div class="card-body">
                         <table class="table">
                             <thead>

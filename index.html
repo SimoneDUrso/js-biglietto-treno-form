@@ -13,35 +13,35 @@
 <body>
     <div class="container bg-purple p-5 mt-5">
         <h2 class="text-center fw-bold text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-        <form action="#">
-            <div class="row d-flex justify-content-center bg-light pt-5 px-3">
-                <div class="col-4 text-center">
-                    <label class="mb-3 purple">Nome e Cognome</label>
-                    <input class="form-control border-purple" id="name-surname" type="text">
-                </div>
 
-                <div class="col-4 text-center">
-                    <label for="km" class="mb-3 purple">Km da percorrere</label>
-                    <input class="form-control border-purple" id="km" type="text">
-                </div>
-
-                <div class="col-4 text-center">
-                    <label for="age" class="mb-3 purple">Fascia d'età</label>
-                    <select class="form-select border-purple" aria-label="Default select example" id="age">
-                        <option value="">...</option>
-                        <option value="minorenne">Minorenne(-18)</option>
-                        <option value="maggiorenne">Maggiorenne(18+)</option>
-                        <option value="senior">Senior(65+)</option>
-                    </select>
-                </div>
-
-                <div class="col-12 text-center my-5 ">
-                    <button id="calculate-price" class="btn btn-info purple">Genera</button>
-                    <button type="reset" class="btn btn-info purple">Annulla</button>
-                </div>
+        <div class="row d-flex justify-content-center bg-light pt-5 px-3 rounded-4">
+            <div class="col-4 text-center">
+                <label class="mb-3 purple">Nome e Cognome</label>
+                <input class="form-control border-purple" id="name-surname" type="text">
             </div>
 
-        </form>
+            <div class="col-4 text-center">
+                <label for="km" class="mb-3 purple">Km da percorrere</label>
+                <input class="form-control border-purple" id="km" type="text">
+            </div>
+
+            <div class="col-4 text-center">
+                <label for="age" class="mb-3 purple">Fascia d'età</label>
+                <select class="form-select border-purple" aria-label="Default select example" id="age">
+                    <option value="">...</option>
+                    <option value="minorenne">Minorenne(-18)</option>
+                    <option value="maggiorenne">Maggiorenne(18+)</option>
+                    <option value="senior">Senior(65+)</option>
+                </select>
+            </div>
+
+            <div class="col-12 text-center my-5 ">
+                <button id="calculate-price" class="btn btn-info purple">Genera</button>
+                <button id="delete" class="btn btn-info purple">Annulla</button>
+            </div>
+        </div>
+
+
 
         <h2 class="text-center fw-bold text-white mt-5">IL TUO BIGLIETTO</h2>
         <div class="row d-flex flex-row bg-light p-3">

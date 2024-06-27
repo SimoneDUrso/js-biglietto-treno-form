@@ -21,6 +21,14 @@ btn.addEventListener("click", function () {
     // STAMPA DEGLI ELEMENTI SU SCHERMO
     document.getElementById("name_surname").innerHTML = name_surname;
     document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
-    document.getElementById("codice").innerHTML = Math.floor(Math.random() * 100000) + 1;
+    document.getElementById("codice").innerHTML = Math.floor(Math.random() * 99999) + 1;
     document.getElementById("prezzo_finale").innerHTML = prezzo_finale.toFixed(2) + " " + "&euro;"
+})
+
+let btnDelete = document.getElementById("delete")
+btnDelete.addEventListener("click", function () {
+
+    document.getElementById("name-surname").value = "";
+    document.getElementById("km").value = "";
+    document.getElementById("age").value = "";
 })
